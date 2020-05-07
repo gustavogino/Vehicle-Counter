@@ -1,23 +1,12 @@
 import cv2
 import numpy as np
 from time import sleep
-
-largura_min = 80  # Largura minima do retangulo
-altura_min = 80  # Altura minima do retangulo
-
-offset = 6  # Erro permitido entre pixel
-
-pos_linha = 550  # Posição da linha de contagem
-
-delay = 60  # FPS do vídeo
-
-detec = []
-carros = 0
+from constantes import *
 
 
-def pega_centro(x, y, w, h):
-    x1 = int(w / 2)
-    y1 = int(h / 2)
+def pega_centro(x, y, largura, altura):
+    x1 = int(largura / 2)
+    y1 = int(altura / 2)
     cx = x + x1
     cy = y + y1
     return cx, cy
