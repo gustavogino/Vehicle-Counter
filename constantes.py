@@ -4,5 +4,3 @@ offset = 6  # Erro permitido entre pixel
 pos_linha = 550  # Posição da linha de contagem
 delay = 60  # FPS do vídeo
 detec = []
-carros = 0
-caminhoes = 0
